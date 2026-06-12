@@ -17,4 +17,4 @@ A aplicação simula em tempo real o impacto das decisões de manejo do produtor
 ## 🛠️ Como Executar o Projeto
 1. Faça o clone deste repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/arenito-sustentavel.git](https://github.com/seu-usuario/arenito-sustentavel.git)
+   git clone [[https://github.com/seu-usuario/arenito-sustentavel.git](https://github.com/seu-usuario/arenito-sustentavel.git)](https://github.com/soaresvictor22-star/agrinho-2026/tree/main)
