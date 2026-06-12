@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arenito Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Arenito Sustentável</h1>
+            <p>Agrinho 2026 • Noroeste do Paraná</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Manejo Inteligente para o Solo Arenoso</h2>
+            <p>O Noroeste do Paraná possui o solo do tipo Arenito Caiuá, que exige cuidado extremo com a erosão e a retenção de água. Escolha a sua cultura e simule o impacto do manejo sustentável.</p>
+        </section>
+
+        <section class="calculadora-box">
+            <h3>Simulador de Impacto Ambiental</h3>
+            <form id="simuladorForm">
+                <div class="form-group">
+                    <label for="cultura">Cultura Principal:</label>
+                    <select id="cultura" required>
+                        <option value="">Selecione...</option>
+                        <option value="mandioca">Mandioca (Foco Regional)</option>
+                        <option value="cana">Cana-de-Açúcar</option>
+                        <option value="pastagem">Pastagem (Pecuária)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="manejo">Prática de Manejo Pretendida:</label>
+                    <select id="manejo" required>
+                        <option value="">Selecione...</option>
+                        <option value="convencional">Arado Convencional (Alto Risco)</option>
+                        <option value="direto">Plantio Direto / Cobertura Morta</option>
+                        <option value="integrado">ILPF (Integração Lavoura-Pecuária-Floresta)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="area">Tamanho da Área (em Hectares):</label>
+                    <input type="number" id="area" min="1" placeholder="Ex: 15" required>
+                </div>
+
+                <button type="submit" class="btn-calcular">Analisar Sustentabilidade</button>
+            </form>
+        </section>
+
+        <section id="resultado" class="resultado-box hidden">
+            <h3>Painel de Diagnóstico do Projeto</h3>
+            <div class="cards-resultado">
+                <div class="card" id="cardErosao">
+                    <h4>Risco de Erosão</h4>
+                    <p class="valor" id="resErosao">-</p>
+                </div>
+                <div class="card" id="cardAgua">
+                    <h4>Retenção de Água</h4>
+                    <p class="valor" id="resAgua">-</p>
+                </div>
+                <div class="card" id="cardScore">
+                    <h4>Score de Sustentabilidade</h4>
+                    <p class="valor" id="resScore">-</p>
+                </div>
+            </div>
+            <div class="recomendacao" id="textoRecomendacao">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Projeto Arenito Sustentável - Categoria 3: Programação Agrinho.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
